@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("./img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Jersey 15', sans-serif;
+    transition: all 1s ease;
+}
+main{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+h2{
+    margin-top: 20px;
+    font-size: 4rem;
+    text-align: center;
+}
+.container {
+    margin-top: 10px;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.flag-img {
+    width: 600px;  
+    height: 300px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.flag-img img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.options ul li {
+    list-style: none;
+    font-size: 4rem;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.options ul li:hover {
+    background-color: aqua;
+}
+.box {
+    font-size: 1rem;
+    margin: 10px 0px;
+    text-align: center;
+
+}
+.box h3 {
+    margin-top: 10px;
+}
+.box span {
+    color: blue;
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+.points {
+    font-size: 2rem;
+}
+.new-game {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 30px;
+
+}
+.right span {
+    color: green;
+    font-size: 2.5rem;
+}
+.wrong span {
+    color: red;
+    font-size: 2.5rem;
+}
+.result {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+ 
+}
+.next {
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    border: 1px solid ;
+    background-color: lightblue;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.next:hover {
+    background-color: green;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;  
+    background-color: rgb(32, 31, 31);
+    text-align: center; 
+
+}
+.footer-text {
+    color: white;
+    font-size: 1rem; 
+    font-family: sans-serif;
+}
+
+.score {
+    color: yellow;
+}
+@media screen and (max-width: 900px)  {
+    body {
+        height: 100vh;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        
+    }
+    .flag-img {
+        height: 200px;
+        width: 400px;
+    }
+    h2 {
+        margin: 0;
+    }
+    .box {
+        margin-top: 20px;
+    }
+    .box span {
+        font-size: 2.2rem;
+    }
+    .result {
+        font-size: 20px;
+    }
+    .options ul  li {
+        margin: 5px 0;
+        padding: 0;
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .new-game {
+        margin-bottom: 20px;
+    }
+}
