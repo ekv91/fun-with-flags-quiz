@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 
     function updateScore() {
-        document.querySelector('.box h3 span').textContent = correctAnswers;
+        document.querySelector('.box h3 span').textContent = correctAnswers - incorrectAnswers;
         document.querySelector('.right span').textContent = correctAnswers;
         document.querySelector('.wrong span').textContent = incorrectAnswers;
     }

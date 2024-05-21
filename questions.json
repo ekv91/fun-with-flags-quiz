@@ -45,7 +45,7 @@
         "right_answer": "Germany"
     },
     {
-        "img": "Iraq.png",
+        "img": "iraq.png",
         "options": [
             "Iraq",
             "Iran",
@@ -391,9 +391,9 @@
         "options": [
             "Maldives",
             "Slovakia",
-            "Nigeria"
+            "Niger"
         ],
-        "right_answer": "Nigeria"
+        "right_answer": "Niger"
     },
     {
         "img": "south-sudan.png",
