@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         const imgContainer = document.querySelector('.flag-img img');
         const optionsList = document.querySelector('.options ul');
 
-        imgContainer.src = `/img/${question.img}`;
+        imgContainer.src = question.img;
         imgContainer.alt = question.right_answer;
         optionsList.innerHTML = ''; // Clear previous options
 
@@ -87,8 +87,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     nextButton.onclick = function() {
         currentQuestionIndex++; // Increment to next question
-        resultEl.style.opacity= 0;
-        resultEl.textContent ='';
+        resultEl.style.opacity = 0;
+        resultEl.textContent = '';
         showQuestion();
     };
 
