@@ -205,12 +205,12 @@ footer {
     }
     h2 {
         font-size: 2rem;
-        margin-top: 20px; /* Reduce margin to save space */
+        margin-top: 0px; /* Reduce margin to save space */
     }
     .flag-img {
         display: flex;
         max-width: 100%; /* Use full width for smaller devices */
-        max-height: 200px;
+        height: 200px;
     }
 
     .options ul li {
