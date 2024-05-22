@@ -235,12 +235,12 @@ footer {
         padding-bottom: 10px;
     }
     .next {
-        font-size: 1.2rem;
+        font-size: 1.2srem;
         padding: 10px;
     }
     .new-game {
         font-size: 1.2rem;
         padding:10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 }
