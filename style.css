@@ -208,6 +208,7 @@ footer {
         margin-top: 5px; /* Reduce margin to save space */
     }
     .flag-img {
+        display: flex;
         max-width: 100%; /* Use full width for smaller devices */
         max-height: 250px;
     }
