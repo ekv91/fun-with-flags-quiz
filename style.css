@@ -205,7 +205,7 @@ footer {
     }
     h2 {
         font-size: 3rem;
-        margin-top: 5px; /* Reduce margin to save space */
+        margin-top: 20px; /* Reduce margin to save space */
     }
     .flag-img {
         display: flex;
@@ -214,7 +214,7 @@ footer {
     }
 
     .options ul li {
-        font-size: 2rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
         padding: 10px 0;
     }
     .points{
