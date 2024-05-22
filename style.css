@@ -226,11 +226,11 @@ footer {
     }
 
     footer {
-        height: 1rem; /* Smaller footer for less intrusion */
+        height: 1.5rem; /* Smaller footer for less intrusion */
     }
 
     .footer-text {
-        font-size: 0.8rem; 
+        font-size: 1rem; 
         font-family: sans-serif;
         padding-bottom: 10px;
     }
