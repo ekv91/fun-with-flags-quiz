@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function() {
     const resultEl = document.getElementsByClassName('result')[0];
+    resultEl.style.opacity = 0;
     const nextButton = document.querySelector('.next'); // Select the Next Question button
 
     async function fetchQuestions() {
@@ -83,6 +84,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         incorrectAnswers = 0;
         showQuestion();
         updateScore();
+        resultEl.style.opacity = 0;
     };
 
     nextButton.onclick = function() {
