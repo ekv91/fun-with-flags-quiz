@@ -201,7 +201,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     body {
-        min-height: 100vh;
+        height: 100vh;
     }
     h2 {
         font-size: 2rem;
@@ -210,7 +210,7 @@ footer {
     .flag-img {
         display: flex;
         max-width: 100%; /* Use full width for smaller devices */
-        max-height: 250px;
+        max-height: 200px;
     }
 
     .options ul li {
