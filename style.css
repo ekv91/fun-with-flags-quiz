@@ -22,7 +22,7 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     width: 100%;
     max-width: 600px;
@@ -34,19 +34,31 @@ h2 {
     font-size: 3rem;
     text-align: center;
 }
+.options ul li {
+    padding: 20px 0;
+}
 
 .container {
     margin-top: 10px;
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.points {
+    min-width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.points h3 {
+    font-size: 2.2rem;
+}
 .flag-img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 500px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +70,7 @@ h2 {
 
 .flag-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -162,11 +174,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center; /* Centers content vertically */
+    font-family: sans-serif;
 }
 
 .footer-text {
     color: white;
-    font-size: 0.8rem; /* Increase size if too small */
+    font-size: 1rem; /* Increase size if too small */
 }
 
 
@@ -174,18 +187,23 @@ footer {
 @media screen and (max-width: 1000px) {
     body {
         min-height: 100%;
-        width: 100%;
+        width: 100%;;
     }
     h2 {
         font-size: 3rem;
         margin-top: 10px;
     }
+    main {
+        flex-direction: column;
+    }
 
     .flag-img {
-        height: auto;
-        width: 100%;
-        max-width: 300px;
+        max-height: 250px;
+        max-width: 400px;
         margin-top: 0px;
+    }
+    .flag-img img {
+        height: 100%;
     }
     .options ul li {
         font-size: 1.5rem;
@@ -197,12 +215,16 @@ footer {
     .points {
         margin-top: 30px;
     }
+    footer {
+        font-family: sans-serif;
+    }
 }
 
 @media screen and (max-width: 600px) {
     body {
         height: 100vh;
     }
+
     h2 {
         font-size: 2rem;
         margin-top: 20px; /* Reduce margin to save space */
@@ -210,11 +232,11 @@ footer {
     .flag-img {
         display: flex;
         max-width: 100%; /* Use full width for smaller devices */
-        height: 200px;
+        max-height: 200px;
     }
 
     .options ul li {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
         padding: 10px 0;
     }
     .points{
@@ -226,13 +248,12 @@ footer {
     }
 
     footer {
-        height: 1.5rem; /* Smaller footer for less intrusion */
+        height: 2rem; /* Smaller footer for less intrusion */
     }
-
     .footer-text {
-        font-size: .8rem; 
+        font-size: 1rem; 
         font-family: sans-serif;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
     .next {
         font-size: 1.2srem;
